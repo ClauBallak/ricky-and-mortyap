@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(https://i.pinimg.com/564x/08/ab/cc/08abcc662eb7f312dfcb1903d8707e1d.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div img {
+    width: 300px;
+    padding: 20px;
+   }
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    padding: 10px;
+    margin: 5px;
+        border-radius: 15%;
+    background-color: #00c3ff;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+  }
+  
+  header nav ul li:hover {
+    background-color: #ffff1ce1;
+  }
+
+a {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+   
+}
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+.imagen-sinopsis {
+width: 300px;
+}
+.texto-sinopsis {
+    padding: 15px;
+       gap: 10px;
+       margin: 30px 0;
+       text-align: justify;
+    }
+.textohbo {
+    padding: 15px;
+
+}
+.container-grid {
+    background-color: rgba(78, 238, 50, 0.551);
+    padding: 10px; 
+    display: flex;
+    align-items: center;
+    }
+
+main section {
+    display: flex;
+     padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #00c3ff;  
+background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);  
+background: linear-gradient(to right, #ffff1c, #00c3ff); 
+
+}
+
+main section h2 {
+    text-align: center;
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+
+main section div p {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    justify-content: center;
+   
+}
+main h2 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 5px;
+    background-color: #00c3ff;
+    background: -webkit-linear-gradient(to left, #ffff1c, #00c3ff);  
+background: linear-gradient(to left, #ffff1c, #00c3ff); 
+}
+
+h2 {
+    padding: 5px;
+}
+.personajes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.grid-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+/*estilo de la cajita, color, borde*/
+.tarjeta {
+    width: 100%;
+      background-color: rgba(78, 238, 50, 0.551);
+    text-align: center;
+    border-radius: 10px;
+    width: 160px;
+    padding: 10px;
+    margin: 10px;  
+    gap: 20px;  
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.596);
+       }
+       .tarjeta:hover {
+        background-color: #00c3ff;
+       }
+
+.imagecita {
+      width: 100px;
+       }
+
+
+/*estilo descripcion de las imagenes*/
+p {
+    padding: 5px;
+    font-size: medium;
+   }
+
+/*tamano de las imagenes de personajes*/
+section div img {
+    border-radius: 10%;
+    border: 1px solid gray;
+}
+
+.nombre-personaje {
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+   font-style:initial;
+   color: black;
+   font-size: large;
+}
+
+nav {
+    display: flex;
+    }
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.hbologo {
+    width: 150px;
+    padding: 15px;
+    url(https://www.hbomax.com/ar/es/series/urn:hbo:series:GXkRjxwjR68PDwwEAABKJ?countryRedirect=1);
+   
+}
+footer {
+    background-color:rgb(8, 8, 118);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: beige;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer div nav ul {
+    list-style: none;
+   }
+
+footer div nav ul li {
+    padding: 0px;
+       gap: 10px;
+    }
+footer a {
+    color: black;
+    background-color: #ffff1ce0;
+    border-radius: 10px;
+}
+footer div h3 {
+    padding: 10px;
+}
+.btn-flotante {
+    font-size: 29px;
+    font-weight: bold;
+    color: black;
+    width: 40px;
+    height: 30px;
+    border-radius: 50% 50%;
+    border: solid black 6px;
+    letter-spacing: 0px;
+    background-color: yellowgreen;
+    position:fixed;
+    bottom: 50px;
+    right: 10px;
+    transition: all 300ms ease 0ms;
+    box-shadow: 1px 1px 30px black;
+    z-index: 99;
+    text-align: center;
+  }
+  
+  .btn-flotante:hover {
+    background-color:blue;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px);
+  }
+  
+  @media (max-width: 480px) {
+header, div, ul, main, .texto-sinopsis, .imagen-sinopsis, .btn-flotante {
+    flex-direction: column;
+    gap: 10px;
+}
+  }
+
+

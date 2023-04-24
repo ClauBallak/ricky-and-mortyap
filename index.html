@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" href="styles.css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img
+          src="https://logos-world.net/wp-content/uploads/2022/01/Rick-And-Morty-Symbol.png"
+          alt="imagen menu navegacion"
+        />
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="#personajes">Characters</a>
+          </li>
+          <li>
+            <a href="#míralo">Watch</a>
+          </li>
+          <li>
+            <a href="#biografia">Biography</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Sinopsis</h2>
+
+      <section id="sinopsis" class="sinopsis">
+        <div class="imagen-sinopsis">
+          <img
+            src="https://i.pinimg.com/236x/6e/f0/4b/6ef04bb77afaf10e726c90735e930b90.jpg"
+            alt="imagen-sinopsis"
+          />
+        </div>
+        <div class="texto-sinopsis">
+          <p>
+            The series follows the misadventures of cynical mad scientist Rick Sanchez and his good-hearted but fretful grandson Morty Smith, who split their time between domestic life and interdimensional adventures that take place across an infinite number of realities, often travelling to other planets and dimensions through portals and on Rick's flying saucer. The general concept of Rick and Morty relies on two conflicting scenarios: domestic family drama, and an alcoholic grandfather dragging his grandson into hijinks.
+          </p>
+          <h3>Country of origin: USA.</h3>
+          <h3>Created by Justin Roiland and Dan Harmon</h3>
+          <h3>Release: 2013.</h3>
+        </div>
+      </section>
+
+      <h2>Characters:</h2>
+      
+      <section id="personajes" class="personajes">
+        <div class="container"> 
+       <!-- Contenedor para renderizar con Js --> 
+         <div id="grid-item" class="grid-item"></div>
+        </div>
+      </section>
+               
+      <h2>Watch the show!</h2>
+      <section id="míralo" class="míralo">
+        <div>
+          <img class="hbologo"
+            src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/hc_1440x810/public/media/image/2021/11/logo-hbo-max-2538085.jpg?itok=SNNDP-5F"
+            alt="Logo HBO"
+          />
+        </div>
+        <div class="textohbo">
+          <h3>Whatch the show</h3>
+          <p>
+            All 6 seasons of Rick and Morty are available on HBO Max. It has a total of 61 episodes.
+          </p>
+        </div>
+      </section>
+
+      <h2>Biography</h2>
+      <section id="biografia" class="biografia">
+        <div>
+          <p>
+            ¡Hi! My name is Claudia Ballak, i was born in brasil but i’ve lived in argentina for 23 years. Im a public translator and i always loved programming. Im very excited for this new journey of life!
+          </p>
+        </div>
+      </section>
+      <a href="#" class="btn-flotante">^</a>
+    </main>
+
+    <footer>
+      <div>
+        <h3>Hecho por mí, Claudia Ballak</h3>
+        <p>Introducción al Desarrollo Web</p>
+        <p>Marzo 2023</p>
+        <p>comisión 172</p>
+        <p>Profesor: Grabriel Alberini</p>
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="https://github.com/ClauBallak" target="_blank">Github</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-github"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                ></path>
+              </svg>
+                         </li> 
+                    </nav>
+      </div>
+    </footer>
+    <script src="app/app.js"></script>
+  </body>
+</html>
